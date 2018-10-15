@@ -8,7 +8,7 @@ namespace ConsoleApp1.dao.entity
 {
     public class SexoEntity
     {
-        private int id;
+        private string id;
         private string descripcion;
 
         public SexoEntity()
@@ -23,7 +23,7 @@ namespace ConsoleApp1.dao.entity
         }
 
 
-        public int Id
+        public string Id
         {
             get { return id; }
             set { id = value; }

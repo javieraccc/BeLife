@@ -9,7 +9,7 @@ namespace ConsoleApp1.dao.entity
     public class EstadoCivilEntity
     {        
 
-        private int id;
+        private string id;
         private string descripcion;
 
         public EstadoCivilEntity()
@@ -23,7 +23,7 @@ namespace ConsoleApp1.dao.entity
             set { descripcion = value; }
         }
 
-        public int Id
+        public string Id
         {
             get { return id; }
             set { id = value; }

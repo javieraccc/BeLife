@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1.dao.entity
+namespace Persistencia.dao.entity
 {
     public class PlanEntity
     {

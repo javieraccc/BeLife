@@ -23,4 +23,4 @@ namespace Negocio.Business.rules.generic
         }
     }
 }
-}
+

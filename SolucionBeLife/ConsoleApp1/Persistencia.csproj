@@ -43,11 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dao\ClienteDAO.cs" />
+    <Compile Include="dao\ContratoDAO.cs" />
     <Compile Include="dao\entity\ClienteEntity.cs" />
     <Compile Include="dao\entity\ContratoEntity.cs" />
     <Compile Include="dao\entity\EstadoCivilEntity.cs" />
     <Compile Include="dao\entity\PlanEntity.cs" />
     <Compile Include="dao\entity\SexoEntity.cs" />
+    <Compile Include="dao\EstadoCivilDAO.cs" />
+    <Compile Include="dao\PlanDAO.cs" />
+    <Compile Include="dao\SexoDAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

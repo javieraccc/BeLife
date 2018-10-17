@@ -67,12 +67,52 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\css\menu.css" />
+    <Content Include="app\css\responsive.css" />
+    <Content Include="app\css\style.css" />
+    <Content Include="app\img\ClientAdd.png" />
+    <Content Include="app\img\ClientDelete.png" />
+    <Content Include="app\img\Clientes.png" />
+    <Content Include="app\img\ClientSearch.png" />
+    <Content Include="app\img\ClientUpdate.png" />
+    <Content Include="app\img\ContractAdd.png" />
+    <Content Include="app\img\ContractDelete.png" />
+    <Content Include="app\img\ContractSearch.png" />
+    <Content Include="app\img\ContractUpdate.png" />
+    <Content Include="app\img\Contratos.png" />
+    <Content Include="app\img\DataSearch.png" />
+    <Content Include="app\img\Logo BeLife.png" />
+    <Content Include="app\js\menu.js" />
+    <Content Include="app\site\listar_cliente.aspx" />
+    <Content Include="app\site\registrar_cliente.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="app\site\listar_cliente.aspx.cs">
+      <DependentUpon>listar_cliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="app\site\listar_cliente.aspx.designer.cs">
+      <DependentUpon>listar_cliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="app\site\registrar_cliente.aspx.cs">
+      <DependentUpon>registrar_cliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="app\site\registrar_cliente.aspx.designer.cs">
+      <DependentUpon>registrar_cliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="app\site\template\template.Master.cs">
+      <DependentUpon>template.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="app\site\template\template.Master.designer.cs">
+      <DependentUpon>template.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\site\template\template.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -81,12 +121,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="app\css\" />
-    <Folder Include="app\img\" />
-    <Folder Include="app\js\" />
-    <Folder Include="app\site\template\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

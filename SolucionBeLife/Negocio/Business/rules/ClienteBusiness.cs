@@ -5,16 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Persistencia.dao
+namespace Negocio.Business.rules
 {
-    public interface ClienteDAO
+    public interface ClienteBusiness
     {
-        List<ClienteEntity> findAll();
-
         void create(ClienteEntity cliente);
+
+        void update(ClienteEntity cliente);
 
         void delete(ClienteEntity cliente);
 
-        void update(ClienteEntity cliente);
+        List<ClienteEntity> listCliente();
     }
 }

@@ -44,7 +44,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business\exception\BusinessException.cs" />
+    <Compile Include="Business\rules\ClienteBusiness.cs" />
+    <Compile Include="Business\rules\ContratoBusiness.cs" />
+    <Compile Include="Business\rules\EstadoCivilBusiness.cs" />
     <Compile Include="Business\rules\generic\EmptyRule.cs" />
+    <Compile Include="Business\rules\impl\ClienteBusinessImpl.cs" />
+    <Compile Include="Business\rules\impl\ContratoBusinessImpl.cs" />
+    <Compile Include="Business\rules\impl\EstadoCivilBusinessImpl.cs" />
+    <Compile Include="Business\rules\impl\PlanBusinessImpl.cs" />
+    <Compile Include="Business\rules\impl\SexoBusinessImpl.cs" />
+    <Compile Include="Business\rules\PlanBusiness.cs" />
+    <Compile Include="Business\rules\SexoBusiness.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -52,7 +62,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Business\rules\impl\" />
+    <ProjectReference Include="..\ConsoleApp1\Persistencia.csproj">
+      <Project>{60582190-5D8E-4B45-929E-D2C30F40CBBB}</Project>
+      <Name>Persistencia</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

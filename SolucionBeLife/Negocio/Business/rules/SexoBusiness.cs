@@ -5,16 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Persistencia.dao
+namespace Negocio.Business.rules
 {
-    public interface SexoDAO
+    public interface SexoBusiness
     {
-        List<SexoEntity> findAll();
-
         void create(SexoEntity sexo);
+
+        void update(SexoEntity sexo);
 
         void delete(SexoEntity sexo);
 
-        void update(SexoEntity sexo);
+        List<SexoEntity> listSexo();
     }
 }

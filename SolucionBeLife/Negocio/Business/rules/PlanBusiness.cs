@@ -5,16 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Persistencia.dao
+namespace Negocio.Business.rules
 {
-    public interface PlanDAO
+    public interface PlanBusiness
     {
-        List<PlanEntity> findAll();
-
         void create(PlanEntity plan);
+
+        void update(PlanEntity plan);
 
         void delete(PlanEntity plan);
 
-        void update(PlanEntity plan);
+        List<PlanEntity> listPlan();
     }
 }

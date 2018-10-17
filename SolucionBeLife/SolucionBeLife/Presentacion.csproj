@@ -85,7 +85,7 @@
     <Folder Include="app\css\" />
     <Folder Include="app\img\" />
     <Folder Include="app\js\" />
-    <Folder Include="app\site\" />
+    <Folder Include="app\site\template\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

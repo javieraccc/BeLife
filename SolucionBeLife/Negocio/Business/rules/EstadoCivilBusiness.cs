@@ -5,16 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Persistencia.dao
+namespace Negocio.Business.rules
 {
-    public interface EstadoCivilDAO
+    public interface EstadoCivilBusiness
     {
-        List<EstadoCivilEntity> findAll();
-
         void create(EstadoCivilEntity estadoCivil);
+
+        void update(EstadoCivilEntity estadoCivil);
 
         void delete(EstadoCivilEntity estadoCivil);
 
-        void update(EstadoCivilEntity estadoCivil);
+        List<EstadoCivilEntity> listContrato();
     }
 }

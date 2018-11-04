@@ -15,6 +15,6 @@ namespace Negocio.Business.rules
 
         void delete(EstadoCivilEntity estadoCivil);
 
-        List<EstadoCivilEntity> listContrato();
+        List<EstadoCivilEntity> listEstado();
     }
 }

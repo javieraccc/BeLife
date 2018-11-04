@@ -23,7 +23,7 @@ namespace Negocio.Business.rules.impl
             dao.delete(estadoCivil);
         }
 
-        public List<EstadoCivilEntity> listContrato()
+        public List<EstadoCivilEntity> listEstado()
         {
             return dao.findAll();
         }

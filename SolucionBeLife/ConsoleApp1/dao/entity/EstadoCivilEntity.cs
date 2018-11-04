@@ -9,7 +9,7 @@ namespace Persistencia.dao.entity
     public class EstadoCivilEntity
     {        
 
-        private string id;
+        private int id;
         private string descripcion;
 
         public EstadoCivilEntity()
@@ -23,7 +23,7 @@ namespace Persistencia.dao.entity
             set { descripcion = value; }
         }
 
-        public string Id
+        public int Id
         {
             get { return id; }
             set { id = value; }

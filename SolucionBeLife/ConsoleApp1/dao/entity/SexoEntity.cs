@@ -8,7 +8,7 @@ namespace Persistencia.dao.entity
 {
     public class SexoEntity
     {
-        private string id;
+        private int id;
         private string descripcion;
 
         public SexoEntity()
@@ -23,7 +23,7 @@ namespace Persistencia.dao.entity
         }
 
 
-        public string Id
+        public int Id
         {
             get { return id; }
             set { id = value; }

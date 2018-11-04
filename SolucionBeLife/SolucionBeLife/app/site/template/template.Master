@@ -23,21 +23,23 @@
 		</div>
 
 		<ul>
+            <li style="float: left; width: 100%;"><a
+				href="home.aspx"
+				style="width: 100%;"> <i style="float: left;"
+					class="material-icons">list</i><span class="menu-name">Home</span>
+			</a></li>
+
 			<li style="float: left; width: 100%;"><a
-				href="registrar:cliente.aspx"
-				style="width: 100%;"> <i class="material-icons" style="float: left;">person_add</i><span class="menu-name">home</span>
+				href="registrar_cliente.aspx"
+				style="width: 100%;"> <i class="material-icons" style="float: left;">person_add</i><span class="menu-name">Registrar Clientes</span>
 
 			</a></li>
 			<li style="float: left; width: 100%;"><a
 				href="listar_cliente.aspx"
 				style="width: 100%;"> <i style="float: left;"
-					class="material-icons">format_align_center</i><span class="menu-name">region</span>
+					class="material-icons">format_align_center</i><span class="menu-name">Listar Clientes</span>
 			</a></li>
-			<li style="float: left; width: 100%;"><a
-				href="comuna.aspx"
-				style="width: 100%;"> <i style="float: left;"
-					class="material-icons">list</i><span class="menu-name">comuna</span>
-			</a></li>
+			
 		</ul>
 
 	</div>

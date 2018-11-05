@@ -17,8 +17,8 @@ namespace Persistencia.dao.entity
         private DateTime finVigencia;
         private bool estadoVigente;
         private bool declaracionSalud;
-        private float primaAnual;
-        private float primaMensual;
+        private double primaAnual;
+        private double primaMensual;
         private string observaciones;
 
         public ContratoEntity()
@@ -33,14 +33,14 @@ namespace Persistencia.dao.entity
         }
 
 
-        public float PrimaMensual
+        public double PrimaMensual
         {
             get { return primaMensual; }
             set { primaMensual = value; }
         }
 
 
-        public float PrimaAnual
+        public double PrimaAnual
         {
             get { return primaAnual; }
             set { primaAnual = value; }

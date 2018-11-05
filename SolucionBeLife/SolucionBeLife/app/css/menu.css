@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     z-index: 1;
-    background-color: #D562DC;
+    background-color: #8B1393;
     overflow-x: hidden;
     transition: 0.4s;
     padding: 1rem 0;
@@ -84,7 +84,7 @@
 }
 
 .container-title {
-    background-color: #D562DC;
+    background-color: #8B1393;
     height: 50px;
     margin-top: -25px;
     margin-left: -15px;

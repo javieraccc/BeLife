@@ -25,33 +25,37 @@
 		<ul>
             <li style="float: left; width: 100%;"><a
 				href="home.aspx"
-				style="width: 100%;"> <i style="float: left;"
-					class="material-icons">list</i><span class="menu-name">Home</span>
+				style="width: 100%;"> <i style="float: left;" class="material-icons">home</i><span class="menu-name">Home</span>
 			</a></li>
-
+            <hr />
 			<li style="float: left; width: 100%;"><a
 				href="registrar_cliente.aspx"
-				style="width: 100%;"> <i class="material-icons" style="float: left;">person_add</i><span class="menu-name">Registrar Clientes</span>
-
-			</a></li>
+				style="width: 100%;"> 
+                <asp:Image id="imagen1" runat="server" Height="29px" ImageAlign="left" ImageUrl="~/app/img/ClientAdd.png" />
+                <span class="menu-name">Registrar Clientes</span>
+             </a></li>
+            <hr />
 			<li style="float: left; width: 100%;"><a
 				href="listar_cliente.aspx"
-				style="width: 100%;"> <i style="float: left;"
-					class="material-icons">format_align_center</i><span class="menu-name">Listar Clientes</span>
+				style="width: 100%;">
+                <asp:Image id="image1" runat="server" Height="29px" ImageAlign="left" ImageUrl="~/app/img/Clientes.png" />
+                <span class="menu-name">Listar Clientes</span>
 			</a></li>
-            
+            <hr />
 			<li style="float: left; width: 100%;"><a
 				href="registrar_contratos.aspx"
-				style="width: 100%;"> <i style="float: left;"
-					class="material-icons">format_align_center</i><span class="menu-name">Registrar Contratos</span>
+				style="width: 100%;"> 
+                <asp:Image id="image2" runat="server" Height="29px" ImageAlign="left" ImageUrl="~/app/img/ContractAdd.png" />
+                <span class="menu-name">Registrar Contratos</span>
 			</a></li>
-
+            <hr />
             <li style="float: left; width: 100%;"><a
 				href="listar_contratos.aspx"
-				style="width: 100%;"> <i style="float: left;"
-					class="material-icons">format_align_center</i><span class="menu-name">Listar Contratos</span>
+				style="width: 100%;"> 
+                <asp:Image id="image3" runat="server" Height="29px" ImageAlign="left" ImageUrl="~/app/img/Contratos.png" />
+                <span class="menu-name">Listar Contratos</span>
 			</a></li>
-
+            <hr />
             <li style="float: left; width: 100%;"><a
 				href="calcular_primas.aspx"
 				style="width: 100%;"> <i style="float: left;"
@@ -65,10 +69,11 @@
 		<div id="pnl-title" class="container-title">
 			<a id="btn-menu-open" class="open open-close"
 				href="javascript:void(0)" onclick="fn_menu_show()"> <i
-				class="material-icons">menu <i class="color1">Be</i><i class="color2">Life</i></i>
-			</a> <a id="btn-menu-close" class="close open-close"  href="#"
-				onclick="fn_menu_hidden()"> <i class="material-icons">menu
-					<i class="color1">Be</i><i class="color2">Life</i></i>
+				class="material-icons">menu </a>
+                     <i><asp:Image id="image4" runat="server" Height="39px" ImageAlign="left" ImageUrl="~/app/img/Logo BeLife.png" />
+                   </i>
+			 <a id="btn-menu-close" class="close open-close"  href="#"
+				onclick="fn_menu_hidden()">
 			</a>
 		</div>
 		<div id="pnl-body" style="max-width:600px;margin:auto;margin-top: 10px;">

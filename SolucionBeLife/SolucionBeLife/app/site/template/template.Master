@@ -39,9 +39,26 @@
 				style="width: 100%;"> <i style="float: left;"
 					class="material-icons">format_align_center</i><span class="menu-name">Listar Clientes</span>
 			</a></li>
+            
+			<li style="float: left; width: 100%;"><a
+				href="registrar_contratos.aspx"
+				style="width: 100%;"> <i style="float: left;"
+					class="material-icons">format_align_center</i><span class="menu-name">Registrar Contratos</span>
+			</a></li>
+
+            <li style="float: left; width: 100%;"><a
+				href="listar_contratos.aspx"
+				style="width: 100%;"> <i style="float: left;"
+					class="material-icons">format_align_center</i><span class="menu-name">Listar Contratos</span>
+			</a></li>
+
+            <li style="float: left; width: 100%;"><a
+				href="calcular_primas.aspx"
+				style="width: 100%;"> <i style="float: left;"
+					class="material-icons">format_align_center</i><span class="menu-name">Calcular primas</span>
+			</a></li>
 			
 		</ul>
-
 	</div>
 
 	<div id="pnl-container" class="container">

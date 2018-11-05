@@ -83,11 +83,29 @@
     <Content Include="app\img\DataSearch.png" />
     <Content Include="app\img\Logo BeLife.png" />
     <Content Include="app\js\menu.js" />
+    <Content Include="app\site\calcular_primas.aspx" />
+    <Content Include="app\site\home.aspx" />
     <Content Include="app\site\listar_cliente.aspx" />
+    <Content Include="app\site\listar_contratos.aspx" />
     <Content Include="app\site\registrar_cliente.aspx" />
+    <Content Include="app\site\registrar_contratos.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="app\site\calcular_primas.aspx.cs">
+      <DependentUpon>calcular_primas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="app\site\calcular_primas.aspx.designer.cs">
+      <DependentUpon>calcular_primas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="app\site\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="app\site\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
     <Compile Include="app\site\listar_cliente.aspx.cs">
       <DependentUpon>listar_cliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -95,12 +113,26 @@
     <Compile Include="app\site\listar_cliente.aspx.designer.cs">
       <DependentUpon>listar_cliente.aspx</DependentUpon>
     </Compile>
+    <Compile Include="app\site\listar_contratos.aspx.cs">
+      <DependentUpon>listar_contratos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="app\site\listar_contratos.aspx.designer.cs">
+      <DependentUpon>listar_contratos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="app\site\registrar_cliente.aspx.cs">
       <DependentUpon>registrar_cliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="app\site\registrar_cliente.aspx.designer.cs">
       <DependentUpon>registrar_cliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="app\site\registrar_contratos.aspx.cs">
+      <DependentUpon>registrar_contratos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="app\site\registrar_contratos.aspx.designer.cs">
+      <DependentUpon>registrar_contratos.aspx</DependentUpon>
     </Compile>
     <Compile Include="app\site\template\template.Master.cs">
       <DependentUpon>template.Master</DependentUpon>

@@ -43,6 +43,7 @@ namespace Persistencia.dao.impl
                 adapter.GetData().Rows)
             {
                 ClienteEntity cliente = new ClienteEntity();
+
                 cliente.Rut = row.RutCliente;
                 cliente.Nombres = row.Nombres;
                 cliente.Apellidos = row.Apellidos;
@@ -51,6 +52,7 @@ namespace Persistencia.dao.impl
                 cliente.FechaNacimiento = row.FechaNacimiento;
                 cliente.Sexo = sexos.FirstOrDefault(
                     sexo => sexo.Id == row.IdSexo);
+
                 clientes.Add(cliente);                
             }
             return clientes;

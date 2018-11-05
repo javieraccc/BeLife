@@ -7,7 +7,7 @@
         <div class="col-75">
             <span>&nbsp;</span>
         </div>
-        <div class="col-25 green-button">
+        <div class="col-50 green-button">
             <asp:Button ID="btn_listar_clientes" runat="server"
                 Text="Listar"  OnClick="btn_listar_clientes_Click"/>
         </div>
@@ -17,9 +17,9 @@
             <Columns>
                 <asp:BoundField HeaderText="Rut" DataField="Rut" ReadOnly="true"/>
                 <asp:BoundField HeaderText="Nombres" DataField="Nombres" ReadOnly="true"/>
-                <asp:BoundField HeaderText="Apellidos" DataField="Apekkidos" ReadOnly="true"/>
-                <asp:BoundField HeaderText="Sexo" DataField="Sexo" ReadOnly="true"/>
-                <asp:BoundField HeaderText="Estado Civil" DataField="EstadoCivil" ReadOnly="true"/>
+                <asp:BoundField HeaderText="Apellidos" DataField="Apellidos" ReadOnly="true"/>
+                <asp:BoundField HeaderText="Sexo" DataField="Sexo.Descripcion" ReadOnly="true"/>
+                <asp:BoundField HeaderText="Estado Civil" DataField="EstadoCivil.Descripcion" ReadOnly="true"/>
                 <asp:BoundField HeaderText="Fecha de Nacimiento" DataField="FechaNacimiento"
                     DataFormatString="{0:dd/MM/yyyy}" ReadOnly="true" />
              </Columns>

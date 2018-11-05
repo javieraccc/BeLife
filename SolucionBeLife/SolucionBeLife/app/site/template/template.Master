@@ -59,7 +59,7 @@
             <li style="float: left; width: 100%;"><a
 				href="calcular_primas.aspx"
 				style="width: 100%;"> <i style="float: left;"
-					class="material-icons">format_align_center</i><span class="menu-name">Calcular primas</span>
+					class="material-icons">list</i><span class="menu-name">Calcular primas</span>
 			</a></li>
 			
 		</ul>

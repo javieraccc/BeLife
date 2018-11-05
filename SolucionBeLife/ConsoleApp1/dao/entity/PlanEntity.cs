@@ -10,7 +10,7 @@ namespace Persistencia.dao.entity
     {
         private string idPlan;
         private string nombrePlan;
-        private float primaBase;
+        private double primaBase;
         private string polizaActual;
 
         public PlanEntity()
@@ -25,7 +25,7 @@ namespace Persistencia.dao.entity
         }
 
 
-        public float PrimaBase
+        public double PrimaBase
         {
             get { return primaBase; }
             set { primaBase = value; }

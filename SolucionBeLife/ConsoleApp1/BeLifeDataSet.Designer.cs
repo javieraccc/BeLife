@@ -2847,12 +2847,17 @@ SELECT RutCliente, Nombres, Apellidos, FechaNacimiento, IdSexo, IdEstadoCivil FR
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT RutCliente, Nombres, Apellidos, FechaNacimiento, IdSexo, IdEstadoCivil FRO" +
                 "M dbo.Cliente";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "DELETE FROM [dbo].[Cliente] WHERE (([RutCliente] = @Original_RutCliente))";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_RutCliente", global::System.Data.SqlDbType.NVarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "RutCliente", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3061,6 +3066,35 @@ SELECT RutCliente, Nombres, Apellidos, FechaNacimiento, IdSexo, IdEstadoCivil FR
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(string Nombres, string Apellidos, System.DateTime FechaNacimiento, int IdSexo, int IdEstadoCivil, string Original_RutCliente, string Original_Nombres, string Original_Apellidos, System.DateTime Original_FechaNacimiento, int Original_IdSexo, int Original_IdEstadoCivil) {
             return this.Update(Original_RutCliente, Nombres, Apellidos, FechaNacimiento, IdSexo, IdEstadoCivil, Original_RutCliente, Original_Nombres, Original_Apellidos, Original_FechaNacimiento, Original_IdSexo, Original_IdEstadoCivil);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, false)]
+        public virtual int DeleteByRut(string Original_RutCliente) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
+            if ((Original_RutCliente == null)) {
+                throw new global::System.ArgumentNullException("Original_RutCliente");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(Original_RutCliente));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     

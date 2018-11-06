@@ -25,8 +25,9 @@ namespace Persistencia.dao.impl
 
         public void delete(ClienteEntity cliente)
         {
-            adapter.Delete(cliente.Rut, cliente.Nombres, cliente.Apellidos, cliente.FechaNacimiento,
-                cliente.Sexo.Id, cliente.EstadoCivil.Id);
+            adapter.DeleteByRut(cliente.Rut);
+            //adapter.Delete(cliente.Rut, cliente.Nombres, cliente.Apellidos, cliente.FechaNacimiento,
+            //    cliente.Sexo.Id, cliente.EstadoCivil.Id);
         }
 
         public List<ClienteEntity> findAll()
